@@ -1,5 +1,6 @@
 import HomeLayout from "../../layouts/HomeLayout";
 import Banner from "./components/Banner";
+import ListProduct from "./components/ListProduct";
 import LoginCard from "./components/LoginCard";
 
 export default function HomePage() {
@@ -7,6 +8,7 @@ export default function HomePage() {
     <HomeLayout>
       <Banner />
       <LoginCard />
+      <ListProduct />
     </HomeLayout>
   );
 }
