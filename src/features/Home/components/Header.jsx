@@ -45,9 +45,9 @@ const Icons = {
 const Header = () => {
   return (
     <header>
-      <div className="flex items-center justify-between px-4.5 py-0.5">
+      <div className="flex items-center px-4.5 py-0.5">
         <SearchInput />
-        <div className="grid grid-cols-3 gap-3 order-1 mr-1.5">
+        <div className="grid grid-cols-3 gap-3 order-1 ml-1.5">
           <Icons.mail />
           <Icons.notif />
           <Icons.cart />
@@ -59,12 +59,9 @@ const Header = () => {
 
 const SearchInput = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-full max-w-[368px]">
       <Icons.search className="absolute ml-2" />
-      <input
-        className="border w-[368px] h-[36px] ps-8 rounded-sm placeholder:text-[16.5px]"
-        placeholder="Cari di Tokopedia"
-      />
+      <input className="border  w-full h-[36px] ps-8 rounded-sm placeholder:text-[16.5px] overflow-hidden text-ellipsis whitespace-nowrap" />
       <button className="-ml-11 font-bold text-[17.5px] mt-0.5">Cari</button>
     </div>
   );

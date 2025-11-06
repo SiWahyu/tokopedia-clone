@@ -1,5 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
 @import "tailwindcss";
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@theme {
+  --font-opensauce: "Open Sauce One", sans-serif;
+}
+@layer base {
+  html,
+  body {
+    font-family: var(--font-opensauce);
+  }
+}
+
